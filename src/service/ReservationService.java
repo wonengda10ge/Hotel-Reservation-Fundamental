@@ -17,7 +17,8 @@ public class ReservationService {
     }
 
     public Reservation reserveARoom(Customer customer, IRoom room, Date checkInDate, Date checkOutDate){
-        return new Reservation(customer, room, checkInDate, checkOutDate);
+        Reservation newReservation = new Reservation(customer, room, checkInDate, checkOutDate);
+        return newReservation;
     }
 
     public ArrayList<IRoom> findRooms(Date checkInDate, Date checkOutDate) {
@@ -31,5 +32,6 @@ public class ReservationService {
     public void printAllReservations(){
         System.out.println("");
     }
+
  
 }
