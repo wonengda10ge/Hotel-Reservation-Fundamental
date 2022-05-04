@@ -16,7 +16,7 @@ public class AdminResource {
     }
 
     public void addRoom(List<Room> rooms){
-
+        
     }
 
     public ArrayList<IRoom> getAllRooms(){

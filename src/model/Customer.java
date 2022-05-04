@@ -1,9 +1,11 @@
 package model;
 import java.util.regex.Pattern;
+import java.util.HashMap;
 /**
  * @TODO need to add regex within the constructor to validate the format of the customer email
  */
 public class Customer {
+    public static HashMap<String, Customer> customers;
     private String firstName;
     private String lastName;
     private String email;
@@ -19,6 +21,10 @@ public class Customer {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+    }
+
+    public String getEmail(){
+        return this.email;
     }
 
     @Override

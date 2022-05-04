@@ -1,6 +1,8 @@
 package model;
+import java.util.ArrayList;
 
 public class FreeRoom extends Room {
+    public static ArrayList<FreeRoom> freeRooms;
     private String roomNumber;
     private RoomType enumeration;
 

@@ -1,27 +1,20 @@
 package service;
-
 import java.util.ArrayList;
 import model.Customer;
 
 public class CustomerService {
     public void addCustomer(String email, String firstName, String lastName) {
-        Customer customer = new Customer(firstName, lastName, email);
-        
+        Customer newCustomer = new Customer(firstName, lastName, email);
+        Customer.customers.put(newCustomer.getEmail(),newCustomer);
     }
 
     public Customer getCustomer(String customerEmail, ArrayList<Customer> customerList){
-
-        for(Customer customer : customerList){
-            if(customer.getEmail() == customerEmail){
-                return customer;
-            }
-        }
-        return null;
+        return Customer.customers.get(customerEmail);
     }
 
     public ArrayList<Customer> getAllCustomers(){
-        // return customerList
-        return null;
+        ArrayList<Customer> customerList = new ArrayList<Customer>(Customer.customers.values());
+        return customerList;
     }
 
 }

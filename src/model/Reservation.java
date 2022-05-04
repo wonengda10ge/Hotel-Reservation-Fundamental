@@ -1,7 +1,10 @@
 package model;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Reservation {
+    
+    public static ArrayList<Reservation> reservations;
     private Customer customer;
     private IRoom room;
     private Date checkInDate;

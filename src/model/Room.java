@@ -1,7 +1,7 @@
 package model;
-
+import java.util.ArrayList;
 public class Room implements IRoom {
-    
+    public static ArrayList<Room> rooms;
     private String roomNumber;
     private Double price;
     private RoomType enumeration;

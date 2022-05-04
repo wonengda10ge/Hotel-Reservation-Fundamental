@@ -1,10 +1,13 @@
 import java.util.Scanner;
 
+
+import model.*;
 /**
  * @author Jeffrey Sun
  * @link : https://learn-udacity.top/udjp168172/Java%20Programming/index.html
  */
 public class App {
+  
     static{
         System.out.println("Applicaton starts!!");
         System.out.println("-------------------");
@@ -12,9 +15,8 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         
-
         while(true){
-            
+            // mainMenuFSM();
             break;
         }
 
